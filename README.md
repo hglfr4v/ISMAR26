@@ -11,9 +11,7 @@ data/
 ├── Demo_TOT.xlsx
 ├── Final_TOT.xlsx
 ├── Survey_Condition_TOT.xlsx
-├── Zeiten.xlsx
-├── Short_UEQ_Data_Analysis_Tool.xlsx
-└── items.json
+└── Zeiten.xlsx
 ```
 
 The five Excel workbooks and one JSON file occupy approximately 460 KB. The macOS `.DS_Store` file, if present locally, is not part of the dataset and should not be committed.
@@ -102,30 +100,4 @@ A supporting time table (`Zeiten` is German for “times”).
 
 Time values are stored as Excel serial day fractions. Preserve the workbook's time formatting or convert them explicitly to the required unit before analysis.
 
-### `Short_UEQ_Data_Analysis_Tool.xlsx`
 
-A formula-driven Short UEQ analysis workbook attributed inside the file to Dr. Martin Schrepp. Its input sheet currently contains 13 response rows, so it should not be assumed to represent all 36 participants in the consolidated datasets.
-
-The workbook contains ten sheets:
-
-| Sheet | Purpose |
-| --- | --- |
-| `Read_First` | Instructions and language selection |
-| `Data` | Eight-item UEQ-S input data |
-| `DT` | Responses transformed to the −3 to +3 scale and participant-level scale scores |
-| `Results` | Item and scale summaries |
-| `Confidence_Intervals` | Confidence intervals for items and scales |
-| `Scale_Consistency` | Item correlations and Cronbach's alpha calculations |
-| `Benchmark` | Comparison with the tool's benchmark data |
-| `Inconsistencies` | Detection of potentially inconsistent response patterns |
-| `Items` | Multilingual item wording |
-| `Sample_Size` | Sample-size and precision guidance |
-
-### `items.json`
-
-Multilingual labels corresponding to the UEQ-S workbook's `Items` sheet.
-
-- 36 languages
-- 18 fields per language
-- 16 fields for the left/right wording of eight UEQ-S items
-- two scale labels: Pragmatic Quality and Hedonic Quality
